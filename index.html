@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LayerByte portfolio: development, cybersecurity learning, ethical hacking, and practical open-source tools.">
+  <title>LayerByte · Terminal Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="loader" data-loader aria-label="Loading LayerByte terminal">
+    <div class="loader-window">
+      <span class="loader-line">&gt; boot layerbyte.sys</span>
+      <span class="loader-line">&gt; load profile</span>
+      <span class="loader-line">&gt; access granted<span class="caret">_</span></span>
+    </div>
+  </div>
+
+  <main class="terminal-shell">
+    <header class="topbar" aria-label="Site navigation">
+      <a class="brand-link" href="#home" aria-label="LayerByte home">
+        <img class="avatar-mark" src="assets/layerbyte-logo.jpg" alt="LayerByte logo">
+        <span>LayerByte</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language switch">
+        <button class="language-button is-active" type="button" data-lang="en">EN</button>
+        <button class="language-button" type="button" data-lang="cs">CZ</button>
+      </div>
+    </header>
+
+    <section class="hero terminal-panel" id="home" aria-labelledby="hero-title">
+      <div class="terminal-titlebar" aria-hidden="true">
+        <span class="window-dot"></span>
+        <span class="window-dot"></span>
+        <span class="window-dot"></span>
+        <span class="window-path">layerbyte@portfolio:~/profile</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="terminal-label">$ whoami</p>
+        <h1 id="hero-title" data-i18n="heroTitle">LayerByte</h1>
+        <p class="hero-line" data-i18n="heroLine">Developer / Cybersecurity student / Ethical hacking enthusiast</p>
+        <div class="command-row" aria-label="Profile status">
+          <span>&gt;</span>
+          <span data-i18n="heroCommand">Building practical security tools and clean open-source projects.</span>
+          <span class="caret">_</span>
+        </div>
+      </div>
+
+      <aside class="hero-aside" aria-label="LayerByte status">
+        <div class="status-grid" aria-label="Profile stats">
+          <div class="status-cell">
+            <span class="status-value">50+</span>
+            <span class="status-label" data-i18n="statTools">Tools</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-value">3+</span>
+            <span class="status-label" data-i18n="statYears">Years learning</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-value">24/7</span>
+            <span class="status-label" data-i18n="statMode">Learning</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="terminal-panel" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <p class="terminal-label">/profile/about</p>
+        <h2 id="about-title" data-i18n="aboutTitle">About</h2>
+      </div>
+
+      <div class="about-grid">
+        <p data-i18n="aboutText">
+          LayerByte is focused on cybersecurity, networking, Linux, Windows, and small tools that solve real problems without unnecessary complexity.
+        </p>
+        <ul class="terminal-list" aria-label="About details">
+          <li data-i18n="aboutOne">Learning ethical hacking and defensive security.</li>
+          <li data-i18n="aboutTwo">Building utilities for certificates, DNS, files, headers, and hashes.</li>
+          <li data-i18n="aboutThree">Keeping projects simple, useful, and maintainable.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="terminal-panel" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="terminal-label">/stack/skills</p>
+        <h2 id="skills-title" data-i18n="skillsTitle">Skills</h2>
+      </div>
+
+      <div class="skill-groups">
+        <article class="skill-box">
+          <h3 data-i18n="skillsCode">Code</h3>
+          <div class="chip-row">
+            <span>Go</span>
+            <span>Rust</span>
+            <span>Python</span>
+            <span>Lua</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>C#</span>
+            <span>C++</span>
+            <span>Swift</span>
+          </div>
+        </article>
+
+        <article class="skill-box">
+          <h3 data-i18n="skillsSecurity">Security</h3>
+          <div class="chip-row">
+            <span>Networking</span>
+            <span>TLS</span>
+            <span>DNS</span>
+            <span>Headers</span>
+            <span>Hashing</span>
+            <span>Auditing</span>
+          </div>
+        </article>
+
+        <article class="skill-box">
+          <h3 data-i18n="skillsSystems">Systems</h3>
+          <div class="chip-row">
+            <span>Linux</span>
+            <span>Windows</span>
+            <span>CLI</span>
+            <span>Automation</span>
+            <span>Open Source</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="terminal-panel" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="terminal-label">/repos/pinned</p>
+        <h2 id="projects-title" data-i18n="projectsTitle">Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <h3>certwatch</h3>
+            <span>Go</span>
+          </div>
+          <p data-i18n="projectCertwatch">TLS certificate expiration checker for quick school and lab checks.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>hashvault</h3>
+            <span>Rust</span>
+          </div>
+          <p data-i18n="projectHashvault">Hash storage and verification utility focused on speed and clarity.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>filetrace</h3>
+            <span>Rust</span>
+          </div>
+          <p data-i18n="projectFiletrace">Lightweight file tracking and audit monitor for system changes.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>tracebit</h3>
+            <span>Python</span>
+          </div>
+          <p data-i18n="projectTracebit">Network trace and packet analysis helper for learning and quick checks.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>headerguard</h3>
+            <span>JavaScript</span>
+          </div>
+          <p data-i18n="projectHeaderguard">Minimal HTTP security header scanner for browser-based checks.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>dnsradar</h3>
+            <span>Go</span>
+          </div>
+          <p data-i18n="projectDnsradar">DNS reconnaissance helper for lookups and record enumeration.</p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="connect-bar terminal-panel" aria-label="Profile links">
+      <a href="https://github.com/LayerByte" target="_blank" rel="noopener">github.com/LayerByte</a>
+      <a href="https://tryhackme.com/p/LayerByte" target="_blank" rel="noopener">tryhackme/p/LayerByte</a>
+      <a href="https://dev.to/layerbyte" target="_blank" rel="noopener">dev.to/layerbyte</a>
+    </nav>
+
+    <footer class="footer">
+      <span data-i18n="footerText">Czech Republic / Joined Sep 2026 / 178 contributions in the last year</span>
+    </footer>
+  </main>
+</body>
+</html>
